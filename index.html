@@ -286,11 +286,10 @@
 </div>
   <!-- Tabs -->
   <div class="tab-rail">
-    <button class="tab" data-tab="lessons" title="Anime Security Lessons">🧠</button>
-    <button class="tab" data-tab="discovery" title="Directory Discovery">🗂️</button>
-    <button class="tab" data-tab="wisdom" title="Cyber Wisdom">🛡️</button>
-    <button class="tab" data-tab="quotes" title="Quotes & Ethics">💬</button>
-    <button class="tab" data-tab="instructor" title="Instructor">⚙️</button>
+    <button class="tab" data-tab="lessons" title="Anime Security Lessons">R</button>
+    <button class="tab" data-tab="discovery" title="Directory Discovery">E</button>
+    <button class="tab" data-tab="wisdom" title="Cyber Wisdom">Z</button>
+    <button class="tab" data-tab="quotes" title="Quotes & Ethics">E</button>
   </div>
 
   <!-- Slide panel -->
@@ -321,26 +320,23 @@
     const closeBtn = document.getElementById('closePanel');
 
     const contents = {
-      lessons: { title: "Anime Security Lessons", html: `
+      lessons: { title: "WHAT IS", html: `
         <ul><li> SakuraSec fuses anime storytelling with cybersecurity fundamentals.</li>
-            <li>entication flaws — learn from SAO.</li>
-        <li>Cookie encoding ≠ encryption.</li>
+            <li>learn bruteforcing bruhhh</li>
         <li>Privilege separation — no single god admin.</li></ul>` },
       discovery: { title: "Directory Discovery", html: `
         <ul><li>Check <code>robots.txt</code> for hints.</li>
-        <li>Probe /backup /hidden /api.</li>
+        <li>Probe different DIRECTORIES Burpsuite or gobuster your choice</li>
         <li>Restrict or remove sensitive folders.</li></ul>` },
-      wisdom: { title: "Cyber Wisdom", html: `
-        <ul><li>Assume breach, log everything.</li>
+      wisdom: { title: "REACH GOAL", html: `
+        <ul><li>try source code, cookie, etccc</li>
+        <li>Cookie encoding ≠ encryption.</li>
         <li>Defense-in-depth always wins.</li>
-        <li>Use MFA, update, and educate.</li></ul>` },
+      </ul>` },
       quotes: { title: "Quotes & Ethics", html: `
         <p>“Even the strongest can learn.” — Adapt quickly.<br>
         “Secrets are powerful only when kept.” — Handle creds carefully.<br>
-        Always test with permission.</p>` },
-      instructor: { title: "Instructor", html: `
-        <p>Access logs, reset lab data.<br>
-        <a href='admin/panel.html' class='linkish'>Open Instructor Panel →</a></p>` }
+        Always test with permission.</p>` }
     };
 
     function openPanel(tab, key){
